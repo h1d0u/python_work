@@ -3,7 +3,7 @@ information = {
     'lastname' : 'nanami',
     'age' : '21',
     'city' : 'tokyo'
-}
+    }
 print(information)
 print(len(information))
 
@@ -31,4 +31,9 @@ print(emptyDict)
 
 
 
-print(information.items())
+# 遍历字典
+# for k,v in xxx.items()
+for key,value in information.items():
+    print(key)
+    print(value)
+
