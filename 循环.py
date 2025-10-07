@@ -34,7 +34,7 @@ while True:
       print("wrong press")
 
 
-# break的用法
+# break的用法                                         break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句
 
 # # 外层循环
 # while condition1:
@@ -43,3 +43,16 @@ while True:
 #         # 更内层循环
 #         for i in range(10):
 #             break  # 终止的是最内层的for循环          #break只会终止它所在的当前循环层级
+
+
+
+# continue
+# continue 语句跳出本次循环，而break跳出整个循环
+
+# 输出0-10 跳过偶数
+num_2 = 0
+while num_2 < 10:
+   num_2 += 1
+   if num_2 % 2 == 0:
+      continue
+   print(num_2)
