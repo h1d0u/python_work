@@ -23,6 +23,18 @@ print(result_0)
 
 
 
+# 计算x的n次方
+def xn(x,n):
+    i = 1
+    while n > 0:
+        n = n - 1
+        i = i*x
+    return i
+print(xn(5,4))
+
+
+
+
 
 # 计算n个数字的乘积
 def mul(*nums):                                  # 这个*定义可变参数;可变参数的参数个数是可变的
@@ -49,4 +61,28 @@ def move(n, o, p, q):
         move(n - 1, p, o, q)
 
 # 示例
-move(10, 'A', 'B', 'C')
+move(3, 'A', 'B', 'C')
+
+
+
+def car_make(brand,color,price,tow_package=True):
+    car = {"brand":brand,"color":color,"price":price,"tow_package":tow_package}
+    return car
+
+
+while True:
+    brand0 = input("想要的品牌:")
+    color0 = input("想要的颜色:")
+    price0 = input("想要的价格:")
+    tow_package_input = input("是否要改装:")
+    if tow_package_input == "y":
+        tow_package0 = True
+    else:
+        tow_package0 = False
+        
+    quit = input("按q退出")
+    if quit.lower() == "q":
+        break
+    
+wanted_car = car_make(brand0,color0,price0,tow_package0)
+print(wanted_car)

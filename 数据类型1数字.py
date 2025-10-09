@@ -21,4 +21,4 @@
 a,b = 0 ,1
 while a < 100000:
     a,b = b, a+b
-    print(a)
+    print (a)
