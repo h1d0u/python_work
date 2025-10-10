@@ -6,6 +6,14 @@
 # 实例化：创建一个类的实例，类的具体对象。
 
 
+
+
+# 类（Class）	            定义了属性和方法
+# 实例（Instance）		每个实例都有自己独立的数据
+# 方法（Method）	        定义了对象可以做什么
+
+
+
 # 创建类
 
 class Dog:                              # 这里创建了一个叫Dog的类                  类命名规范 首字母大写
@@ -35,7 +43,7 @@ dog2.sit()
 # 下面练习
 
 class Car:
-    def __init__(self,make,model,year):
+    def __init__(self,make,model,year):    # 如果不想使用_init_初始化 可以使用classdata
         """初始化car属性"""
         self.make = make
         self.model = model
@@ -51,7 +59,7 @@ class Car:
         print(f"里程数为{self.mile}")
         
     
-    def change(self,change_mile):
+    def change(self,change_mile):           
         """修改属性值
            禁止回调属性值
         """

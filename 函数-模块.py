@@ -26,3 +26,7 @@ mv(3, 'A', 'B', 'C')
 
 result_0 =sq(1,-2,1)
 print(result_0) 
+
+
+
+# 使用dir()查找模块定义的名称
